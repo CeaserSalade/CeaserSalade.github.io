@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Stef Kikkert</title>
+
+    <link rel="stylesheet" href="stylesheet/style.css" />
+
+    <script src="https://kit.fontawesome.com/b766196c99.js" crossorigin="anonymous"></script>
+    <script src="/script/main.js" defer></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="#" class="logo" alt="logoHere"/>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Software Development Student</p>
+          <h1>
+            Hi, I'm <span>Stef</span> <br />
+            from the Netherlands
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!--About Me-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="#" alt="aboutMeImg"/>
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              My name is Stef Kikkert I am 19 years old and I love to code, game and sport!
+              I am from the Netherlands
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <!--Skills-->
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span><br />Front-end Development</li>
+                <li><span>Game Development</span><br />Game Development</li>
+              </ul>
+            </div>
+
+            <!--Experience-->
+            <div class="tab-contents" id="experience">
+              <ul>
+                <!--Internships and job experience-->
+                <Li><span>???</span><br>Coming soon!</Li>
+              </ul>
+            </div>
+
+            <!--Education-->
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2022-Current</span><br />MBO Sint Lucas Software Development
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Services-->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+          <div class="services-list">
+            <div>
+              <i class="fa-solid fa-code"></i>
+              <h2>Web Development</h2>
+              <p>Front-end Web Development</p>
+              <a href="#">Learn more</a>
+            </div>
+
+            <div>
+              <i class="fa-solid fa-gamepad"></i>
+              <h2>Game Development</h2>
+              <p>Game Development</p>
+              <a href="#">Learn more</a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Projects-->
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+          <div class="project-list">
+            <div class="project">
+              <img src="/images/gameOne.png" alt="game">
+              <div class="layer">
+                <h3>Arcade Project 2020</h3>
+                <p>This was a fun project that I worked on with a group.</p>
+                  <a href="/projects/projectArcade/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+
+            <div class="project">
+              <img src="/images/gameTwo.png" alt="game2">
+              <div class="layer">
+                <h3>Triple Game</h3>
+                <p>This is a project were I refreshed my memories and build 
+                  three old school games.</p>
+                  <a href="/projects/tripleGame/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+
+            <div class="project">
+              <img src="/images/website.png" alt="website">
+              <div class="layer">
+                <h3>Website</h3>
+                <p>My portfolio website was made for a school project.</p>
+                  <a href="/projects/website/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </div>
+          <a href="/projects/index.html" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!--Contact-->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i> stef.kikkert9@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +31 6 813 7 5656</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/stef-kikkert-280aa1255/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/CeaserSalade"><i class="fa-brands fa-github"></i>
+              <a href="https://www.instagram.com/froghero/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="/CV/my-cv.pdf" class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="text" name="email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Made with <i class="fa-solid fa-heart"></i> by Stef</p>
+      </div>
+    </div>
+  </body>
+</html>
