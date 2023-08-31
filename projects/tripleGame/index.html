@@ -1,60 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Triple Game</title>
 
-    <link rel="stylesheet" href="/projects/tripleGame/stylesheet/style.css">
+    <link rel="stylesheet" href="/stylesheet/style.css" />
 
     <script src="https://kit.fontawesome.com/b766196c99.js" crossorigin="anonymous"></script>
-    <script src="/projects/tripleGame/script/main.js" defer></script>
+    <script src="/script/main.js" defer></script>
   </head>
 
   <body>
-    <div id="header">
-        <div class="container">
-          <nav>
-            <img src="#" class="logo" alt="logoHere"/>
-            <ul id="sidemenu">
-              <li><a href="/index.html">Home</a></li>
-              <i class="fas fa-times" onclick="closemenu()"></i>
-            </ul>
-            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
-          </nav>
-          <div class="header-text">
-            <h1>Triple <span>Game</span></h1>
-          </div>
-        </div>
-    </div>
-
-    <div id="projectTripleGame">
-        <div class="container">
-          <div class="row">
-            <div class="project-col-1">
-              <img src="/images/pong.png" alt="pong"/>
-              <img src="/images/arkanoid.png" alt="arkanoid">
-              <img src="/images/platformer.png" alt="platformer">
-            </div>
-            <div class="project-col-2">
-              <p class="project-text">
-                This triple game project was a nice refersher, I made pong, arkanoid
-                and a small platformer game which I can not beat for the life of me!
-                Pong was the easiest to make out of the three as you might have guessed.
-                Arkanoid was giving me some issues, because the ball would just go in a ranndom
-                direction when it touched something. and the platformer wasn't difficult to make
-                it's just hard to beat.
-              </p>
-            </div>
-          </div>
-        </div>
-    </div>
-
-      <div>
-        <div class="copyright">
-            <p>Copyright © Made with <i class="fa-solid fa-heart"></i> by Stef</p>
+    <div id="header-projects">
+      <div class="container">
+        <nav>
+          <h3><span>Stef</span> Kikkert</h3>
+          <!-- <img src="#" class="logo" alt="logoHere" /> -->
+          <ul id="sidemenu">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/projects/index.html">Projects</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>Triple <span>Game</span></h1>
         </div>
       </div>
+    </div>
+
+    <section class="tgame" id="tgame">
+      <div class="tgame-img">
+        <img src="/images/pong.png" />
+      </div>
+      <div class="tgame-text">
+        <p>
+          Pong wasn't hard to recreate, I made the ball bounce by flipping the speed from postive to negative and vice versa.
+          You are able to move the backboard up and not nothing else, nor is there an real ending you just quit when you get
+          bored.
+        </p>
+      </div>
+
+      <div class="tgame-img">
+        <img src="/images/arkanoid.png" />
+      </div>
+      <div class="tgame-text">
+        <p>
+          Arkanoid had some issues, this was with the the way the ball would bounce back in the correct way if it hit
+          something. I was stuck on this for a while but I managed to figure it out. 
+        </p>
+      </div>
+
+      <div class="tgame-img">
+        <img src="/images/platformer.png" />
+      </div>
+      <div class="tgame-text">
+        <p>
+          The platformer was fun to map out and try to beat it. I made it too hard for myself I could never beat it myself
+          without savestates due to how little control you have over the player once you jump. The only controls are to move
+          left and right and to jump.
+        </p>
+      </div>
+    </section>
+
+    <div class="copyright">
+      <p>Copyright © Made with <i class="fa-solid fa-heart"></i> by Stef</p>
+    </div>
   </body>
 </html>

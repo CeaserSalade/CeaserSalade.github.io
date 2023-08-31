@@ -1,55 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Website</title>
 
-    <link rel="stylesheet" href="/projects/projectArcade/stylesheet/style.css">
+    <link rel="stylesheet" href="/stylesheet/style.css" />
 
     <script src="https://kit.fontawesome.com/b766196c99.js" crossorigin="anonymous"></script>
-    <script src="/projects/projectArcade/script/main.js" defer></script>
+    <script src="/script/main.js" defer></script>
   </head>
 
   <body>
-    <div id="header">
-        <div class="container">
-          <nav>
-            <img src="#" class="logo" alt="logoHere"/>
-            <ul id="sidemenu">
-              <li><a href="/index.html">Home</a></li>
-              <i class="fas fa-times" onclick="closemenu()"></i>
-            </ul>
-            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
-          </nav>
-          <div class="header-text">
-            <h1>My <span>Website</span></h1>
-          </div>
-        </div>
-    </div>
-
-    <div id="website">
-        <div class="container">
-          <div class="row">
-            <div class="project-col-1">
-              <img src="/images/websiteDiff.png" alt="projectArcade"/>
-            </div>
-            <div class="project-col-2">
-              <p class="project-text">
-                This website project was very fun in my opinion, I learned a lot,
-                because I've never made my own website before. I will continue to expend
-                on this website to make this something I can show even 10 years from now!
-              </p>
-            </div>
-          </div>
-        </div>
-    </div>
-
-      <div>
-        <div class="copyright">
-            <p>Copyright © Made with <i class="fa-solid fa-heart"></i> by Stef</p>
+    <div id="header-website">
+      <div class="container">
+        <nav>
+          <h3><span>Stef</span> Kikkert</h3>
+          <!-- <img src="#" class="logo" alt="logoHere" /> -->
+          <ul id="sidemenu">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/projects/index.html">Projects</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1><span>Eindhoven </span><br />Rooftop Festival</h1>
         </div>
       </div>
+    </div>
+
+    <section class="website" id="website">
+      <div class="erf-img">
+        <img src="/images/Poster_ERF.png" />
+      </div>
+
+      <div class="erf-text">
+        <p class="erf-text-p">
+          This was a very fun project I learned a bit of how working in a group with people from different fields would pan
+          out. My goal for this project was to increase my development skills and I feel like I succeeded in that. This
+          website is in my eyes the best project I've personally made!
+        </p>
+      </div>
+    </section>
+
+    <section class="website">
+      <div class="erf-text">
+        <span>
+          I was responsible for the creation of the website. I told what I was going to do for the day, and what my deadlines
+          are. I Told what I would need from my classmates to finish the website, I asked for feedback to improve the website
+          or aks for their opinion on what would look better.
+        </span>
+      </div>
+
+      <div class="boxl">
+        <div class="erf-img">
+          <img src="/images/Artboard 1.png" />
+        </div>
+      </div>
+    </section>
+
+    <a href="/projects/website/ERF/index.html" target="_blank" class="btn">See Full Page</a>
+
+    <div>
+      <div class="copyright">
+        <p>Copyright © Made with <i class="fa-solid fa-heart"></i> by Stef</p>
+      </div>
+    </div>
   </body>
 </html>
