@@ -194,6 +194,24 @@ header.sticky{
     color: var(--bg-color);
 }
 
+.scroll-icon{
+    position: absolute;
+    top: 92%;
+    right: 7%;
+    transform: translateY(-50%);
+}
+
+.scroll-icon a{
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.scroll-icon i{
+    font-size: 20px;
+    color: var(--text-color);
+    margin-right: 6px;
+}
+
 /* About */
 
 .about{
@@ -325,11 +343,17 @@ header.sticky{
     margin-top: 4.2rem;
 }
 
+.portfolio-btn{
+    margin-top: 40px;
+    text-align: center;
+}
+
 .row img{
     height: auto;
     width: 100%;
     border-radius: 28px;
     margin-bottom: 1.4rem;
+    background: var(--bg-color);
 }
 
 .row{
