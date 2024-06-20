@@ -15,6 +15,7 @@
     --third-bg-color: #2d343f;
     --main-color: #359381;
     --second-color: #c3cad5;
+    --tertiary-color: #93dfd5;
 
     --h1-font: 4.5rem;
     --h2-font: 2.9rem;
@@ -29,6 +30,7 @@ body{
 
 section{
     padding: 110px 16% 90px;
+    background: var(--bg-color);
 }
 
 /* Header */
@@ -134,11 +136,11 @@ header.sticky{
 .hero{
     height: 100vh;
     width: 100%;
-    background-position: top right;
-    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    position: relative;
+    z-index: 1;
 }
 
 .main-content h4{
@@ -310,6 +312,8 @@ header.sticky{
 
 .box img{
     margin-bottom: 20px;
+    border-radius: 50%;
+    background: var(--tertiary-color);
 }
 
 .box h3{
@@ -411,7 +415,7 @@ header.sticky{
     font-size: 27px;
     border-radius: 50%;
     color: var(--text-color);
-    background: #075fe4;
+    background: var(--tertiary-color);
 }
 
 .row h4{
@@ -497,7 +501,7 @@ form .send-btn:hover{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: #075fe4;
+    background: var(--tertiary-color);
     width: 45px;
     height: 45px;
     border-radius: 50%;
