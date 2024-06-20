@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Stef Kikkert</title>
+
+    <link rel="stylesheet" href="../stylesheet/style.css" />
+
+    <!-- Box Icons Link -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+
+    <!-- Remix Icons Link -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- AOS Animation Link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+<!-- Header -->
+<header>
+    <a href="#../index.html/home" class="logo">Frogue <span>Inc.</span></a>
+
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <ul class="navlist">
+        <li><a href="../index.html#home">Home</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#services">Services</a></li>
+        <li><a href="../index.html#portfolio">Portfolio</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+
+    <div class="top-btnn">
+        <a href="#" class="h-btn">Contact me</a>
+    </div>
+</header>
+
+<section class="carousel">
+<!-- Carousel -->
+    <div class="container">
+        <div class="slider">
+            <div class="item" style="background-image: url(../img/port-1.jpg)">
+                <div class="content">
+                    <div class="name">Port 1</div>
+                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, id?</div>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(../img/posterERF.png)">
+                <div class="content">
+                    <div class="name">Port 2</div>
+                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, id?</div>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(../img/port-3.jpg)">
+                <div class="content">
+                    <div class="name">Port 3</div>
+                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, id?</div>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(../img/port-4.jpg)">
+                <div class="content">
+                    <div class="name">Port 4</div>
+                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, id?</div>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(../img/port-5.jpg)">
+                <div class="content">
+                    <div class="name">Port 5</div>
+                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, id?</div>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(../img/port-6.jpg)">
+                <div class="content">
+                    <div class="name">Port 6</div>
+                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, id?</div>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-btn">
+            <i class="ri-arrow-left-line prev"></i>
+            <i class="ri-arrow-right-line next"></i>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+    <div class="center-text" data-aos="fade-down">
+        <h2>Contact <span>Me</span></h2>
+    </div>
+
+    <div class="contact-form" data-aos="zoom-in">
+        <form action="">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here" required></textarea>
+            <input type="submit" name="" value="Send Message" class="send-btn" />
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<div class="footer">
+    <div class="copyright">
+        <p>2024 Stef Kikkert, All Rights Reserved.</p>
+    </div>
+
+    <a href="#" class="scroll-top">
+        <i class="ri-arrow-up-s-line"></i>
+    </a>
+</div>
+
+<!-- JS Link -->
+<script src="../script/main.js"></script>
+<script src="../script/carousel.js"></script>
+
+<!-- AOS Animation Link -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script>
+    AOS.init({
+        offset: 300,
+        duration: 1400,
+    });
+</script>
+</body>
+</html>
