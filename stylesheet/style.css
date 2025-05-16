@@ -65,14 +65,25 @@ span{
 .navlist a{
     font-size: var(--p-font);
     font-weight: 500;
-    color: var(--second-color);
+    color: var(--text-color);
     margin-left: 40px;
-    transition: all .5s ease;
+    position: relative;
+    text-decoration: none;
 }
 
-.navlist a:hover{
-    color: var(--main-color);
-    text-shadow: 3px 3px 20px var(--main-color), -2px 1px 30px var(--text-color);
+.navlist a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background-color: var(--main-color);
+    transition: width 0.3s ease;
+}
+
+.navlist a:hover::after {
+    width: 100%;
 }
 
 #menu-icon{
